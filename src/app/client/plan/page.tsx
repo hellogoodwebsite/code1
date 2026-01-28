@@ -1,6 +1,4 @@
 "use client";
-
-import { PDFDocument, StandardFonts, rgb } from "pdf-lib";
 import { demoAssessments, demoClients } from "@/lib/demo-data";
 
 export default function ClientPlanPage() {
@@ -8,6 +6,7 @@ export default function ClientPlanPage() {
   const assessment = demoAssessments[0];
 
   const downloadPlan = async () => {
+    const { PDFDocument, StandardFonts, rgb } = await import("pdf-lib");
     const pdfDoc = await PDFDocument.create();
     const page = pdfDoc.addPage([612, 792]);
     const font = await pdfDoc.embedFont(StandardFonts.Helvetica);
