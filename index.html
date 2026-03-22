@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Auto Pinoy | Professional Auto Mechanic in Toronto</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Work+Sans:wght@700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "tertiary-fixed": "#ffdad6",
+                "tertiary-container": "#8c0010",
+                "inverse-primary": "#b6c4ff",
+                "tertiary-fixed-dim": "#ffb3ad",
+                "outline-variant": "#c4c5d5",
+                "on-tertiary-fixed-variant": "#930011",
+                "error-container": "#ffdad6",
+                "on-secondary": "#ffffff",
+                "surface-variant": "#dae4e9",
+                "surface-dim": "#d2dce0",
+                "surface-container-high": "#e0eaef",
+                "surface-bright": "#f2fbff",
+                "on-primary-fixed-variant": "#0a3cab",
+                "surface": "#f2fbff",
+                "outline": "#747684",
+                "on-background": "#141d21",
+                "on-tertiary": "#ffffff",
+                "on-surface-variant": "#444653",
+                "on-primary-container": "#96acff",
+                "error": "#ba1a1a",
+                "background": "#f2fbff",
+                "on-secondary-container": "#606474",
+                "primary-fixed": "#dce1ff",
+                "surface-container-highest": "#dae4e9",
+                "primary-container": "#0038a7",
+                "secondary-container": "#dfe1f5",
+                "on-secondary-fixed": "#171b29",
+                "primary": "#002575",
+                "secondary": "#5a5e6e",
+                "tertiary": "#620008",
+                "inverse-surface": "#283236",
+                "primary-fixed-dim": "#b6c4ff",
+                "on-surface": "#141d21",
+                "surface-container": "#e5eff4",
+                "on-error": "#ffffff",
+                "on-tertiary-container": "#ff9189",
+                "secondary-fixed-dim": "#c3c5d8",
+                "surface-container-lowest": "#ffffff",
+                "surface-tint": "#3056c3",
+                "on-primary-fixed": "#00164e",
+                "on-secondary-fixed-variant": "#424656",
+                "on-primary": "#ffffff",
+                "inverse-on-surface": "#e8f2f7",
+                "surface-container-low": "#ebf5fa",
+                "on-error-container": "#93000a",
+                "on-tertiary-fixed": "#410003",
+                "secondary-fixed": "#dfe1f5"
+              },
+              fontFamily: {
+                "headline": ["Work Sans"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md shadow-[0_20px_40px_rgba(0,56,167,0.06)]">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-black text-blue-950 tracking-tighter font-headline">
+                AUTO <span class="text-primary">PINOY</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-blue-700 border-b-2 border-blue-700 pb-1 font-label text-sm font-bold tracking-tight" href="#">Home</a>
+<a class="text-slate-600 hover:text-blue-900 transition-colors font-label text-sm font-bold tracking-tight" href="#">About</a>
+<a class="text-slate-600 hover:text-blue-900 transition-colors font-label text-sm font-bold tracking-tight" href="#">Service</a>
+<a class="text-slate-600 hover:text-blue-900 transition-colors font-label text-sm font-bold tracking-tight" href="#">Contact</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-white px-6 py-2.5 rounded-xl font-bold text-sm hover:scale-105 active:opacity-80 transition-all shadow-lg">
+                Book Appointment
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative pt-32 pb-20 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 z-10">
+<span class="inline-block px-4 py-1.5 rounded-full bg-primary-container/10 text-primary font-label text-xs font-bold tracking-[0.1em] uppercase mb-6">
+                    Elite Toronto Service
+                </span>
+<h1 class="text-5xl md:text-7xl font-headline font-black text-primary leading-[0.95] tracking-tighter mb-8">
+                    Professional Auto Mechanic in <span class="text-surface-tint">Toronto.</span>
+</h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-xl mb-6 font-bold">
+                    We fix all types of vehicles
+                </p>
+<p class="text-on-surface-variant text-base mb-10 leading-relaxed">
+                    Unit 16, 2410 Lawrence Ave E. Scarborough, ON M1P 2R6
+                </p>
+<button class="bg-primary text-white px-8 py-4 rounded-xl font-black font-headline text-lg hover:scale-105 transition-all shadow-xl">
+                    Book Appointment
+                </button>
+</div>
+<!-- Quote Form -->
+<div class="lg:col-span-5">
+<div class="bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0_20px_60px_rgba(0,56,167,0.12)] border border-outline-variant/20">
+<h3 class="text-2xl font-headline font-black text-primary mb-6">Get A Free Quote</h3>
+<form class="space-y-4">
+<div>
+<label class="block text-xs font-bold font-label text-on-surface-variant uppercase tracking-wider mb-2">Your name</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-surface-tint transition-all" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold font-label text-on-surface-variant uppercase tracking-wider mb-2">Your email</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-surface-tint transition-all" type="email"/>
+</div>
+<div>
+<label class="block text-xs font-bold font-label text-on-surface-variant uppercase tracking-wider mb-2">Your message (optional)</label>
+<textarea class="w-full bg-surface-container-low border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-surface-tint transition-all h-32" placeholder="Tell us about your vehicle issues..."></textarea>
+</div>
+<button class="w-full py-4 bg-primary text-white rounded-xl font-black font-headline text-lg hover:bg-primary-container transition-all shadow-xl" type="submit">
+                            SUBMIT
+                        </button>
+</form>
+</div>
+</div>
+</div>
+<div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[120px] -z-10"></div>
+</section>
+<!-- Our Happy Customers (Photo Grid) -->
+<section class="py-16 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-3xl font-headline font-black text-center text-primary mb-12 uppercase tracking-tight">Our Happy Customers</h2>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+<div class="aspect-square rounded-2xl overflow-hidden shadow-sm">
+<img alt="Customer with car" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdVv9I1H3QeT_Wc3uE8Vw8pI9NfC1L6D8L9N4A5B6C7D8E9F0G1H2I3J4K5L6M7N8O9P0Q1R2S3T4U5V6W7X8Y9Z"/>
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden shadow-sm">
+<img alt="Customer with car" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7Y8Z9W0X1V2U3T4S5R6Q7P8O9N0M1L2K3J4I5H6G7F8E9D0C1B2A3Z4Y5X6W7V8U9T0S1R2Q3P"/>
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden shadow-sm">
+<img alt="Customer with car" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3M4L5K6J7I8H9G0F1E2D3C4B5A6Z7Y8X9W0V1U2T3S4R5Q6P7O8N9M0L1K2J3I4H5G6F7E8D9C0B1A"/>
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden shadow-sm">
+<img alt="Customer with car" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9E8F7G6H5I4J3K2L1M0N9O8P7Q6R5S4T3U2V1W0X9Y8Z7A6B5C4D3E2F1G0H9I8J7K6L5M4N3O2P1Q"/>
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden shadow-sm">
+<img alt="Customer with car" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuG1H2I3J4K5L6M7N8O9P0Q1R2S3T4U5V6W7X8Y9Z0A1B2C3D4E5F6G7H8I9J0K1L2M3N4O5P6Q7R8S9T0"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Slider Style -->
+<section class="py-16 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-white p-8 rounded-3xl shadow-sm border border-outline-variant/10">
+<div class="flex items-center gap-2 mb-4 text-amber-400">
+<span class="text-sm font-bold text-slate-900">Google</span>
+<div class="flex">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">"I recently had my car serviced by Auto Pinoy Mobile Service and I couldn't be happier with the results. Not only he did efficiently fixed my car starter, oxygen sensor, change oil, drive belt &amp; dashcam installation but he also provided exceptional service with a friendly attitude throughout the entire process."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center font-bold text-red-600">U</div>
+<div>
+<p class="font-bold text-primary text-sm">Unica MJ</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-white p-8 rounded-3xl shadow-sm border border-outline-variant/10">
+<div class="flex items-center gap-2 mb-4 text-amber-400">
+<span class="text-sm font-bold text-slate-900">Google</span>
+<div class="flex">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">"Very accommodating and easy to deal with. we will definitely go back to him for our auto service needs. Highly recommended! Thanks again Charlie!"</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center font-bold text-blue-600">J</div>
+<div>
+<p class="font-bold text-primary text-sm">Jefrei Sto. Domingo</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-white p-8 rounded-3xl shadow-sm border border-outline-variant/10">
+<div class="flex items-center gap-2 mb-4 text-amber-400">
+<span class="text-sm font-bold text-slate-900">Google</span>
+<div class="flex">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">"Honest, easy to talk with, very good at what he does...mechanic you can trust! Thumbs up sir Charlie! Thank you for taking care of my car."</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center font-bold text-green-600">M</div>
+<div>
+<p class="font-bold text-primary text-sm">Margerie Acorda Mira</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Certified Mechanic Intro -->
+<section class="py-24 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="border-l-4 border-surface-tint pl-8 py-4">
+<h2 class="text-4xl font-headline font-black text-primary mb-6">Certified Mechanic in Toronto</h2>
+<div class="space-y-4 text-on-surface-variant leading-relaxed">
+<p>Expert, up-to-date car diagnostics, efficient repairs, and preventative maintenance, ensuring safety and reliability on every road.</p>
+<p><span class="font-bold text-primary">Certified technicians</span> take care of everything, from routine maintenance to tough repairs, using advanced tools to handle any vehicle.</p>
+<p>Save time and money while keeping your truck in top shape with quick, <span class="font-bold text-primary">reliable service at a fair price.</span></p>
+</div>
+<button class="mt-8 px-6 py-3 border-2 border-primary text-primary rounded-xl font-bold flex items-center gap-2 hover:bg-primary hover:text-white transition-all">
+<span class="material-symbols-outlined">call</span> Call Now
+                    </button>
+</div>
+<div class="rounded-[2rem] overflow-hidden shadow-2xl">
+<img alt="Certified Mechanic at work" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn-o1o2p3q4r5s6t7u8v9w0x1y2z3a4b5c6d7e8f9g0h1i2j3k4l5m6n7o8p9q0r1s2t3u4v5w6x7y8z9a"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Auto Repair Services Grid -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-headline font-black text-primary mb-2">Auto Repair Services</h2>
+<p class="text-on-surface-variant">We service all makes and models.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Service 1 -->
+<div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-transparent hover:border-surface-tint/20 group">
+<div class="h-48 overflow-hidden">
+<img alt="Tires Service" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhAiBiCiDiEiFiGiHiIiJiKiLiMiNiOiPiQiRiSiTiUiViWiXiYiZi0i1i2i3i4i5i6i7i8i9i"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-headline font-black text-primary mb-3">Tires</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Enhance your driving experience with our expert wheel alignment and tire services.</p>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-transparent hover:border-surface-tint/20 group">
+<div class="h-48 overflow-hidden">
+<img alt="Oil Change" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbDiEiFiGiHiIiKiLiMiNiOiPiQiRiSiTiUiViWiXiYiZi0i1i2i3i4i5i6i7i8i9i0i1i2i"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-headline font-black text-primary mb-3">Oil Change</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Regular oil changes are vital for vehicle longevity. Schedule yours today.</p>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-transparent hover:border-surface-tint/20 group">
+<div class="h-48 overflow-hidden">
+<img alt="Brakes" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbEiFiGiHiIiKiLiMiNiOiPiQiRiSiTiUiViWiXiYiZi0i1i2i3i4i5i6i7i8i9i0i1i2i3i"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-headline font-black text-primary mb-3">Brakes</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Experiencing brake issues? Contact us promptly for a thorough inspection.</p>
+</div>
+</div>
+<!-- Service 4 -->
+<div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-transparent hover:border-surface-tint/20 group">
+<div class="h-48 overflow-hidden">
+<img alt="Engines" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuEbFiGiHiIiKiLiMiNiOiPiQiRiSiTiUiViWiXiYiZi0i1i2i3i4i5i6i7i8i9i0i1i2i3i4i"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-headline font-black text-primary mb-3">Engines</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Expert diagnostics and solutions for any engine problem.</p>
+</div>
+</div>
+<!-- Service 5 -->
+<div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-transparent hover:border-surface-tint/20 group">
+<div class="h-48 overflow-hidden">
+<img alt="Transmissions" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuFbGiHiIiKiLiMiNiOiPiQiRiSiTiUiViWiXiYiZi0i1i2i3i4i5i6i7i8i9i0i1i2i3i4i5i"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-headline font-black text-primary mb-3">Transmissions</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Smooth driving with top-notch transmission servicing.</p>
+</div>
+</div>
+<!-- Service 6 -->
+<div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-transparent hover:border-surface-tint/20 group">
+<div class="h-48 overflow-hidden">
+<img alt="Safety Inspection" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuGbHiIiKiLiMiNiOiPiQiRiSiTiUiViWiXiYiZi0i1i2i3i4i5i6i7i8i9i0i1i2i3i4i5i6i"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-headline font-black text-primary mb-3">Safety Inspection</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Get your car safety inspection done with us.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 10+ Years Experience & Benefits -->
+<section class="py-20 bg-white">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="text-center">
+<div class="w-16 h-16 bg-primary-container/10 rounded-2xl flex items-center justify-center text-primary mx-auto mb-6">
+<span class="material-symbols-outlined text-3xl">star</span>
+</div>
+<h4 class="text-xl font-headline font-black text-primary mb-4">10+ Years of Experience</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">We've been repairing cars for over 10 years. Our skilled team knows how to handle any issue, ensuring reliable and professional service every time.</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 bg-primary-container/10 rounded-2xl flex items-center justify-center text-primary mx-auto mb-6">
+<span class="material-symbols-outlined text-3xl">build</span>
+</div>
+<h4 class="text-xl font-headline font-black text-primary mb-4">We Repair Everything</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">We service all makes and models from Mazda to Porsche. With advanced diagnostic equipment for all vehicles, we identify and fix issues in one place.</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 bg-primary-container/10 rounded-2xl flex items-center justify-center text-primary mx-auto mb-6">
+<span class="material-symbols-outlined text-3xl">verified</span>
+</div>
+<h4 class="text-xl font-headline font-black text-primary mb-4">Solutions You Can Trust</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">We focus on solving the real problem, not just addressing symptoms. Our team only repairs what's necessary, ensuring you're not charged for unnecessary fixes or issues we create.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Promotions Section -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-4xl font-headline font-black text-primary mb-12">Promotions</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Promo 1 -->
+<div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-outline-variant/10">
+<div class="h-48 overflow-hidden">
+<img alt="Battery Testing" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuHhIiKiLiMiNiOiPiQiRiSiTiUiViWiXiYiZi0i1i2i3i4i5i6i7i8i9i0i1i2i3i4i5i6i7i"/>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-headline font-black text-primary mb-3">Free Battery Testing</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Ensure your vehicle's reliability with our complimentary battery testing service.</p>
+</div>
+</div>
+<!-- Promo 2 -->
+<div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-outline-variant/10">
+<div class="h-48 overflow-hidden">
+<img alt="Pre Trip Inspection" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuIhJiKiLiMiNiOiPiQiRiSiTiUiViWiXiYiZi0i1i2i3i4i5i6i7i8i9i0i1i2i3i4i5i6i7i8i"/>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-headline font-black text-primary mb-3">Free Pre Driving Trip Safety Inspection</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Travel with confidence—take advantage of our free safety inspection before your next trip.</p>
+</div>
+</div>
+<!-- Promo 3 -->
+<div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-outline-variant/10">
+<div class="h-48 overflow-hidden">
+<img alt="Brake Inspection" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuJhKiLiMiNiOiPiQiRiSiTiUiViWiXiYiZi0i1i2i3i4i5i6i7i8i9i0i1i2i3i4i5i6i7i8i9i"/>
+</div>
+<div class="p-8">
+<h3 class="text-xl font-headline font-black text-primary mb-3">Free Brake Inspection</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Your safety is paramount. Benefit from our free brake inspection service.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Media Footer Section -->
+<section class="py-12 bg-white text-center">
+<div class="max-w-7xl mx-auto px-6">
+<h4 class="text-xl font-headline font-black text-primary mb-2">Happy Customers, Happy Drivers</h4>
+<p class="text-on-surface-variant mb-6 text-sm">Follow Auto Pinoy on Facebook, Instagram &amp; Tiktok</p>
+<div class="flex justify-center gap-6">
+<a class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center hover:opacity-80 transition-opacity" href="#"><span class="material-symbols-outlined">facebook</span></a>
+<a class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center hover:opacity-80 transition-opacity" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+<a class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center hover:opacity-80 transition-opacity" href="#"><span class="material-symbols-outlined">music_note</span></a>
+</div>
+</div>
+</section>
+<!-- Bottom Contact Form & Support -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16">
+<div class="bg-white p-10 rounded-[2.5rem] shadow-sm">
+<h3 class="text-2xl font-headline font-black text-primary mb-8">Contact Form</h3>
+<form class="space-y-6">
+<div>
+<label class="block text-xs font-bold font-label text-on-surface-variant uppercase tracking-wider mb-2">Your name</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-surface-tint" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-bold font-label text-on-surface-variant uppercase tracking-wider mb-2">Your email</label>
+<input class="w-full bg-surface-container-low border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-surface-tint" type="email"/>
+</div>
+<div>
+<label class="block text-xs font-bold font-label text-on-surface-variant uppercase tracking-wider mb-2">Your message (optional)</label>
+<textarea class="w-full bg-surface-container-low border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-surface-tint h-32"></textarea>
+</div>
+<button class="w-full py-4 bg-primary text-white rounded-xl font-black font-headline text-lg hover:bg-primary-container transition-all" type="submit">SUBMIT</button>
+</form>
+</div>
+<div class="flex flex-col justify-center">
+<h2 class="text-4xl font-headline font-black text-primary mb-6 leading-tight">Don't stress, call now, let us help you.</h2>
+<div class="space-y-6 text-on-surface-variant leading-relaxed mb-10">
+<p>Family owned, affordable mechanic in Toronto.</p>
+<p>If you want a trustworthy mechanic for immediate help, contact us now.</p>
+</div>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-white px-10 py-4 rounded-xl font-black font-headline text-lg hover:scale-105 transition-all shadow-xl">(437) 297-5084</button>
+<button class="bg-white text-primary border-2 border-primary px-10 py-4 rounded-xl font-black font-headline text-lg hover:bg-surface-container-high transition-all">Book Appointment</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer with Map -->
+<footer class="bg-white border-t border-slate-100 py-16">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+<div class="space-y-8">
+<div class="text-2xl font-black text-primary font-headline">AUTO PINOY</div>
+<p class="text-on-surface-variant text-sm leading-relaxed">Reliable mechanic near you.</p>
+<div class="space-y-4">
+<div class="flex items-center gap-4 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">location_on</span>
+                            2410 Lawrence Ave E unit 16, Scarborough, ON M1P 2R6
+                        </div>
+<div class="flex items-center gap-4 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">call</span>
+                            (437) 297-5084
+                        </div>
+<div class="flex items-center gap-4 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">mail</span>
+                            Email Auto Pinoy
+                        </div>
+<div class="flex items-center gap-4 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">schedule</span>
+                            Mon - Sat 9AM - 6PM
+                        </div>
+<div class="flex items-center gap-4 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">schedule</span>
+                            Sunday 10AM - 3PM
+                        </div>
+</div>
+<div class="flex gap-4">
+<button class="px-6 py-2 border border-primary text-primary font-bold rounded-lg text-xs hover:bg-primary hover:text-white transition-all">Book Appointment</button>
+<button class="px-6 py-2 border border-primary text-primary font-bold rounded-lg text-xs hover:bg-primary hover:text-white transition-all">Contact</button>
+</div>
+</div>
+<div>
+<div class="rounded-3xl overflow-hidden shadow-lg border border-outline-variant/20 h-[300px]">
+<img alt="Map location" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuKhLiMiNiOiPiQiRiSiTiUiViWiXiYiZi0i1i2i3i4i5i6i7i8i9i0i1i2i3i4i5i6i7i8i9i0i1i2i3i4i5i6i7i8i"/>
+</div>
+<p class="text-[10px] text-on-surface-variant mt-4 text-center uppercase tracking-widest font-bold">AUTO PINOY Mobile Service Mechanic</p>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-400 text-xs">© 2024 Auto Pinoy. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-slate-400 hover:text-primary text-xs underline" href="#">Privacy Policy</a>
+<a class="text-slate-400 hover:text-primary text-xs underline" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
